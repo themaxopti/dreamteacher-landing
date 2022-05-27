@@ -23,7 +23,7 @@ export const FirstPage = () => {
                     <div className="first-page__col-two">
                         <div className='first-page__main-text'>
                             <div className='first-page__text-one'> <span className='hid'> 2 июня в 19.00 (по Киеву) состоится  </span> <span className='big-l'>о</span>нлайн вебинар <br />
-                                <span className='hid'>«Как сдать IELTS в 2022 году», где вы узнаете</span>
+                                «Как сдать IELTS в 2022 году», где вы узнаете
                             </div>
                             <div className='first-page__main-photo'>
                                 {/* <div className='first-page__tan-desc'>Татьяна Лозик – Сертифицированный IELTS <br />  Coach</div> */}
@@ -35,7 +35,7 @@ export const FirstPage = () => {
                                 {/* <div className='first-page__tan-desc'>Татьяна Лозик – Сертифицированный IELTS <br />  Coach</div> */}
                             </div>
                             <div className='mobile'>
-                                «Как сдать IELTS в 2022 году» <br /> Уже в этот чт, 2 июня в 19:00 по Киеву <br />
+                                Уже в этот чт, 2 июня в 19:00 по Киеву <br />
                                 где вы узнаете:
                             </div>
                             <div className='first-page__text-line'>
