@@ -215,11 +215,27 @@ a {
 }
 
 @media (max-width: 424px) {
+
+  .first-page{
+    padding-bottom: 20px;
+  }
+
   .first-page__main-photo {
-    // transform: translateX(-10px);
-    img {
-      object-fit: cover !important;
+    // transform: scale(1.2 , 1.2);
+    // margin-right: 10px;
+    padding: 0 !important;
+    order: 1;
+
+    div {
+      img {
+        transform: translate(-10px, -40px);
+        object-fit: contain !important;
+      }
     }
+  }
+
+  .first-page__main-text {
+    order: 2;
   }
 
   .first-page__text-line {
