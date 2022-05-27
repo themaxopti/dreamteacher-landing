@@ -16,7 +16,7 @@ export const Form = () => {
 
     return (
         <>
-            <div className='section'>
+            <div className='section' id='register'>
                 <div className="section__content">
                     <form className='form' onSubmit={handleSubmit(onSubmit)}>
                         <div className='form__want'>Форма регистрации</div>

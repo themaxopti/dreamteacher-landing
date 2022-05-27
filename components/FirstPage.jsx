@@ -26,16 +26,22 @@ export const FirstPage = () => {
                                 «Как сдать IELTS в 2022 году»
                             </div>
                             <div className='first-page__main-photo'>
+
                                 {/* <div className='first-page__tan-desc'>Татьяна Лозик – Сертифицированный IELTS <br />  Coach</div> */}
                                 <div className='first-page__tanya hidden-pc'>
                                     <div>
                                         <img src="/images/Tanya-one.png" alt="" />
                                     </div>
                                 </div>
+
                                 {/* <div className='first-page__tan-desc'>Татьяна Лозик – Сертифицированный IELTS <br />  Coach</div> */}
                             </div>
+                            <div className='btn-register hidden'>
+
+                                <div><a href="#register"> Записаться </a></div>
+                            </div>
                             <div className='mobile'>
-                                Уже в этот чт, 2 июня в 19:00 по Киеву <br />
+                                Уже в этот четверг, 2 июня в 19:00 по Киеву
                                 где вы узнаете:
                             </div>
                             <div className='first-page__text-line'>
@@ -63,6 +69,9 @@ export const FirstPage = () => {
                         </div>
                         <div className='first-page__main-photo hidden-mobile'>
                             {/* <div className='first-page__tan-desc'>Татьяна Лозик – Сертифицированный IELTS <br />  Coach</div> */}
+                            <div className='btn-register'>
+                                <div><a href="#register"> Записаться</a></div>
+                            </div>
                             <div className='first-page__tanya'>
                                 <div>
                                     <img src="/images/Tanya-one.png" alt="" />
