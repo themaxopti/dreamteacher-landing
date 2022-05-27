@@ -12,7 +12,7 @@ export const FirstPage = () => {
                                 <img src="/images/instagram.svg" alt="" />
                             </div>
                             <div className='first-page__in-link'>
-                                <Link href={"/"}>
+                                <Link target={'_blank'} href={"https://www.instagram.com/english_dreamteacher/?utm_medium=copy_link"}>
                                     english_dreamteacher
                                 </Link>
                             </div>
