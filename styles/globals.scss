@@ -234,7 +234,9 @@ a {
 
 @media (max-width: 892px) {
 
-
+  .btn-register.big{
+    display: none;
+  }
 
   .btn-register.hidden {
     display: flex;
