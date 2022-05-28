@@ -37,7 +37,6 @@ export const FirstPage = () => {
                                 {/* <div className='first-page__tan-desc'>Татьяна Лозик – Сертифицированный IELTS <br />  Coach</div> */}
                             </div>
                             <div className='btn-register hidden'>
-
                                 <div><a href="#register"> Зарегестрироваться </a></div>
                             </div>
                             <div className='mobile'>
@@ -65,13 +64,16 @@ export const FirstPage = () => {
                                     <div className='dot'></div>
                                     <div>Программу 8-недельного авторского курса «IELTS OF YOUR DREAM» - курса полной подготовки к сдаче IELTS.</div>
                                 </div>
+                                <div className='btn-register big'>
+                                    <div><a href="#register">Зарегестрироваться</a></div>
+                                </div>
                             </div>
                         </div>
                         <div className='first-page__main-photo hidden-mobile'>
                             {/* <div className='first-page__tan-desc'>Татьяна Лозик – Сертифицированный IELTS <br />  Coach</div> */}
-                            <div className='btn-register'>
+                            {/* <div className='btn-register big'>
                                 <div><a href="#register">Зарегестрироваться</a></div>
-                            </div>
+                            </div> */}
                             <div className='first-page__tanya'>
                                 <div>
                                     <img src="/images/Tanya-one.png" alt="" />

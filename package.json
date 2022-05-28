@@ -15,7 +15,7 @@
     "react-dom": "18.1.0",
     "react-facebook-pixel": "^1.0.4",
     "react-hook-form": "^7.31.2",
-    "swiper": "^8.0.0"
+    "swiper": "^8.1.6"
   },
   "devDependencies": {
     "eslint": "8.16.0",
