@@ -14,6 +14,7 @@ export const Form = () => {
         window.location.href = 'https://t.me/DreamTeacherBot'
     }
 
+
     return (
         <>
             <div className='section' id='register'>

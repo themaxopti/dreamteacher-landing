@@ -1,7 +1,34 @@
 import Link from 'next/link'
 import React from 'react'
+import { motion } from 'framer-motion'
+import { useState } from 'react'
+import { useSideAnimation } from '../animations/animations'
+
+
+const Spoiler = ({ children, question }) => {
+    const [active, setActive] = useState(false)
+
+    return (
+        <>
+            <div
+                className='cont__title'
+                onClick={e => setActive(true)}
+            >{question}</div>
+            <div
+                className={`cont__hid ${active ? "active" : ""}`}
+                variants={useSideAnimation(0)}
+            >
+                {children}
+            </div>
+        </>
+    )
+}
+
 
 export const FirstPage = () => {
+
+    const [active, setActive] = useState(false)
+
     return (
         <div className='section first-section'>
             <div className="section__content section_fullscreen">
@@ -44,9 +71,24 @@ export const FirstPage = () => {
                                 где вы узнаете:
                             </div>
                             <div className='first-page__text-line'>
-                                <div>
+                                <div className=''>
                                     <div className='dot'></div>
-                                    <div>Какие 3 ошибки снижают вам бал на тесте?</div>
+                                    <div className='cont'>
+                                        {/* <div className='cont__title'>Какие 3 ошибки снижают вам бал на тесте?</div> */}
+                                        {/* <motion.div
+                                            className={`cont__hid `}
+                                            variants={useSideAnimation(0)}
+                                            onClick={e => console.log(e.target)}
+                                        >
+                                            sad
+                                        </motion.div> */}
+                                        <Spoiler question={"Какие 3 ошибки снижают вам бал на тесте?"}>
+                                            Большинство учеников допускают из раза в раз одинаковые ошибки.
+                                            Их очень легко устранить, если сразу обратить внимание на эти ошибки  при подготовке.
+                                            Я расскажу вам про эти нюансы и вы точно не потеряете свой бал на тесте.
+                                        </Spoiler>
+                                    </div>
+
                                 </div>
                                 <div>
                                     <div className='dot'></div>
@@ -84,6 +126,6 @@ export const FirstPage = () => {
                     </div>
                 </div>
             </div>
-        </div>
+        </div >
     )
 }
