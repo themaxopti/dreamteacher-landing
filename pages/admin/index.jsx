@@ -12,7 +12,7 @@ const Admin = () => {
         const origin = process.env.NODE_ENV == 'production' ? 'https://yourdreamteacher-bot.herokuapp.com/api/authAdmin' : "http://localhost:5000/api/authAdmin"
         const response = await axios.get(origin, { withCredentials: true })
         if (!response.data.isAdmin) {
-            return router.push('/admin/login')
+            return router.push('/login')
         }
         choose("users")
         console.log('admin');
