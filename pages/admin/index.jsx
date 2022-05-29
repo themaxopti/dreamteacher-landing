@@ -1,13 +1,16 @@
 import axios from 'axios'
 import React from 'react'
 import { useState, useEffect } from "react"
+import { useRouter } from 'next/router'
+
+
 
 const Admin = () => {
-
+    const router = useRouter()
 
     async function effect() {
         const origin = process.env.NODE_ENV == 'production' ? 'https://yourdreamteacher-bot.herokuapp.com/api/authAdmin' : "http://localhost:5000/api/authAdmin"
-        const response = await axios.get(origin,{withCredentials:true})
+        const response = await axios.get(origin, { withCredentials: true })
         if (!response.data.isAdmin) {
             return router.push('/admin/login')
         }
@@ -20,7 +23,7 @@ const Admin = () => {
 
     const logout = () => {
         const origin = process.env.NODE_ENV == 'production' ? 'https://yourdreamteacher-bot.herokuapp.com/api/logout' : "http://localhost:5000/api/logout"
-        axios.get(origin,{withCredentials:true})
+        axios.get(origin, { withCredentials: true })
     }
 
     useEffect(() => {
@@ -51,7 +54,7 @@ const Admin = () => {
             <div className='section'>
                 <div className='section__content'>
                     <div className="admin">
-                        <div onClick={logout}  style={{ marginTop: '20px' }}>Выйти</div>
+                        <div onClick={logout} style={{ marginTop: '20px' }}>Выйти</div>
                         <div style={{ marginTop: '20px', display: 'flex', flexDirection: 'column', rowGap: '10px' }}>
                             <div style={{ cursor: 'pointer' }} onClick={() => choose("users")}>Пользователи,нажавшие кнопку {"`Зарегестрироваться`"}</div>
                             <div style={{ cursor: 'pointer' }} onClick={() => choose("chat")} >Пользователи,которые вошли в чат</div>
