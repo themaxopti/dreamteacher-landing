@@ -32,14 +32,16 @@ const Admin = () => {
 
     async function choose(title) {
         if (title == 'users') {
-            const response = await axios.get('http://localhost:5000/api/getUsers')
+            const origin = process.env.NODE_ENV == 'production' ? 'https://yourdreamteacher-bot.herokuapp.com/api/getUsers' : "http://localhost:5000/api/getUsers"
+            const response = await axios.get(origin)
             console.log(response.data)
             setInChat(null)
             setUsers(response.data)
         }
 
         if (title == 'chat') {
-            const response = await axios.get('http://localhost:5000/api/getUsersReg')
+            const origin = process.env.NODE_ENV == 'production' ? 'https://yourdreamteacher-bot.herokuapp.com/api/getUsersReg' : "http://localhost:5000/api/getUsersReg"
+            const response = await axios.get(origin)
             console.log(response.data)
             setUsers(null)
             setInChat(response.data)
