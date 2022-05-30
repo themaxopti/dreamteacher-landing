@@ -9,7 +9,7 @@ const Admin = () => {
     const router = useRouter()
 
     async function effect() {
-        const origin = process.env.NODE_ENV == 'production' ? 'https://yourdreamteacher-bot.herokuapp.com/api/authAdmin' : "http://localhost:5000/api/authAdmin"
+        const origin = process.env.NODE_ENV == 'production' ? 'https://maxim-link.space/api/authAdmin' : "http://localhost:5000/api/authAdmin"
         const response = await axios.get(origin, { withCredentials: true })
         if (!response.data.isAdmin) {
             return router.push('/login')
@@ -22,7 +22,7 @@ const Admin = () => {
     }
 
     const logout = () => {
-        const origin = process.env.NODE_ENV == 'production' ? 'https://yourdreamteacher-bot.herokuapp.com/api/logout' : "http://localhost:5000/api/logout"
+        const origin = process.env.NODE_ENV == 'production' ? 'https://maxim-link.space/api/logout' : "http://localhost:5000/api/logout"
         axios.get(origin, { withCredentials: true })
     }
 
@@ -32,7 +32,7 @@ const Admin = () => {
 
     async function choose(title) {
         if (title == 'users') {
-            const origin = process.env.NODE_ENV == 'production' ? 'https://yourdreamteacher-bot.herokuapp.com/api/getUsers' : "http://localhost:5000/api/getUsers"
+            const origin = process.env.NODE_ENV == 'production' ? 'https://maxim-link.space/api/getUsers' : "http://localhost:5000/api/getUsers"
             const response = await axios.get(origin)
             console.log(response.data)
             setInChat(null)
@@ -40,7 +40,7 @@ const Admin = () => {
         }
 
         if (title == 'chat') {
-            const origin = process.env.NODE_ENV == 'production' ? 'https://yourdreamteacher-bot.herokuapp.com/api/getUsersReg' : "http://localhost:5000/api/getUsersReg"
+            const origin = process.env.NODE_ENV == 'production' ? 'https://maxim-link.space/api/getUsersReg' : "http://localhost:5000/api/getUsersReg"
             const response = await axios.get(origin)
             console.log(response.data)
             setUsers(null)
