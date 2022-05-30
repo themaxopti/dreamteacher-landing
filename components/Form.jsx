@@ -11,7 +11,7 @@ export const Form = () => {
         console.log(data, errors)
         const origin = process.env.NODE_ENV == 'production' ? 'https://yourdreamteacher-bot.herokuapp.com/api/newUser' : "http://localhost:5000/api/newUser"
         await axios.post(origin, data)
-        window.location.href = 'https://t.me/DreamTeacherBot'
+        window.location.href = '/thank'
     }
 
 
