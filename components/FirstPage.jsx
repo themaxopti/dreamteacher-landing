@@ -119,7 +119,7 @@ export const FirstPage = () => {
                                     </div>
                                 </div>
                                 <div className='btn-register big'>
-                                    <div><a href="#register">Зарегестрироваться</a></div>
+                                    <div style={{marginBottom:"40px"}}><a href="#register">Зарегестрироваться</a></div>
                                 </div>
                             </div>
                         </div>

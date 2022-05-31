@@ -139,22 +139,22 @@ a {
     font-size: 20px;
     line-height: 37px;
     color: #190e40;
-    div{
+    div {
       display: flex;
       align-items: flex-start;
       column-gap: 10px;
 
-      .cont{
+      .cont {
         display: flex;
         flex-direction: column;
 
-        &__hid{
+        &__hid {
           color: #3c3535;
           font-size: 17px;
           display: none;
         }
 
-        &__title{
+        &__title {
           cursor: pointer;
         }
       }
@@ -261,7 +261,7 @@ a {
 }
 
 @media (max-width: 892px) {
-  .section{
+  .section {
     padding-bottom: 20px;
   }
 
@@ -295,7 +295,7 @@ a {
   text-transform: lowercase;
 }
 
-.go{
+.go {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -303,22 +303,22 @@ a {
   width: 200px;
   height: 40px;
   border-radius: 10px;
-  font-family:Caveat;
+  font-family: Caveat;
   // font-style: italic;
   font-weight: bold;
   color: white;
   font-size: 20px;
-  background-color: #279FDB;
+  background-color: #279fdb;
 }
 
-.thank{
+.thank {
   width: 100%;
   height: 100vh;
   display: flex;
   padding: $padding-mobile;
   justify-content: center;
   align-items: center;
-  &__wrap{
+  &__wrap {
     display: flex;
     flex-direction: column;
     row-gap: 20px;
@@ -329,11 +329,10 @@ a {
 }
 
 @media (max-width: 424px) {
-
-  .thank{
-    &__wrap{
-    justify-content: flex-start;
-    align-items: flex-start;
+  .thank {
+    &__wrap {
+      justify-content: flex-start;
+      align-items: flex-start;
     }
   }
 
@@ -458,7 +457,14 @@ a {
   }
 }
 
+
 @media (max-width: 833px) {
+  .slide-wrap__photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
   .second-page__main {
     flex-direction: column;
   }
@@ -663,8 +669,7 @@ a {
   }
 }
 
-
-.login{
+.login {
   width: 100%;
   height: 100vh;
   display: flex;
@@ -672,16 +677,15 @@ a {
   align-items: center;
 }
 
-
-.login-form{
+.login-form {
   display: flex;
   flex-direction: column;
   row-gap: 20px;
-  &__value{
+  &__value {
     display: flex;
     flex-direction: column;
     row-gap: 10px;
-    input{
+    input {
       border-radius: 10px;
       outline: none;
       height: 40px;
@@ -690,14 +694,14 @@ a {
   }
 }
 
-.content{
+.content {
   display: flex;
   flex-direction: column;
   margin-top: 20px;
   row-gap: 10px;
 }
 
-.user-in-chat{
+.user-in-chat {
   display: flex;
   flex-direction: column;
   row-gap: 5px;
