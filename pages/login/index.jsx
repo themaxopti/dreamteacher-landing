@@ -18,7 +18,7 @@ const Login = () => {
     const { register, handleSubmit, watch, formState: { errors } } = useForm()
     const onSubmit = async (data) => {
         console.log(data, errors)
-        const origin = process.env.NODE_ENV == 'production' ? 'https://maxim-link.space/api/loginAdmin' : "http://localhost:5000/api/loginAdmin"
+        const origin = process.env.NODE_ENV == 'production' ? 'https://yourdreamteacher-bot.herokuapp.com/api/loginAdmin' : "http://localhost:5000/api/loginAdmin"
         const response = await axios.post(origin, data, { withCredentials: true })
 
         if (!response.data.isAdmin) {

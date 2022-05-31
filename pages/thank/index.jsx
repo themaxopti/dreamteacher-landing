@@ -7,7 +7,7 @@ import { useEffect } from 'react'
 const Thank = () => {
 
     const sendPresent = async () => {
-        const origin = process.env.NODE_ENV == 'production' ? 'https://maxim-link.space/api/getPresent' : "http://localhost:5000/api/getPresent"
+        const origin = process.env.NODE_ENV == 'production' ? 'https://yourdreamteacher-bot.herokuapp.com/api/getPresent' : "http://localhost:5000/api/getPresent"
         await axios.post(origin, { email: localStorage.getItem('email') })
         window.location.href = "https://t.me/ielts2022withdreamteacher"
     }
