@@ -9,7 +9,7 @@ export const Form = () => {
     const { register, handleSubmit, watch, formState: { errors } } = useForm()
     const onSubmit = async (data) => {
         console.log(data, errors)
-        const origin = process.env.NODE_ENV == 'production' ? 'https://maxim-link.space/api/newUser' : "http://localhost:5000/api/newUser"
+        const origin = process.env.NODE_ENV == 'production' ? 'https://yourdreamteacher-bot.herokuapp.com/api/newUser' : "http://localhost:5000/api/newUser"
         await axios.post(origin, data)
         window.location.href = '/thank'
         localStorage.setItem('email', data.email)
